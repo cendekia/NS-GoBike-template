@@ -1,0 +1,1 @@
+# NS-GoBike-template
