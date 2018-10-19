@@ -1,0 +1,51 @@
+<Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
+
+	<ActionBar flat="true" class="action-bar">
+		<StackLayout orientation="horizontal">
+			<Label text="GO🚲BIKE" fontSize="24" verticalAlignment="center" />
+		</StackLayout>
+	</ActionBar>
+	<StackLayout orientation="vertical" backgroundColor="white">
+		<StackLayout orientation="horizontal" backgroundColor="white" class="priceBar">
+			<Label width="30%" text="GO💰PAID" color="black" class="leftLabel" />
+			<Label width="40%" text="Rp. 2.000.000" color="black" class="centerLabel" />
+			<Label width="30%" text="TOP UP" class="rightLabel blueC" />
+		</StackLayout>
+		<TabView loaded="onLoaded" androidTabsPosition="bottom" selectedIndexChanged="onSelectedIndexChanged">
+			<TabViewItem iconSource="{{ tabIconOne }}">
+				<StackLayout orientation="vertical" class="mainScreen">
+					<ScrollView orientation="vertical">
+						<StackLayout orientation="vertical">
+							<StackLayout orientation="horizontal"  class="banner" height="120">
+								<Image src="~/resources/images/bike_resize.jpg" stretch="aspectFill" />
+							</StackLayout>
+							<GridLayout columns="*, *, *, *" rows="80, 80, 80" backgroundColor="#eeeeee">
+								<Label class="boxes" text="Icon 1" row="0" col="0" />
+								<Label class="boxes" text="Icon 2" row="0" col="1" />
+								<Label class="boxes" text="Icon 3" row="0" col="2" /> 
+								<Label class="boxes" text="Icon 4" row="0" col="3" />
+								<Label class="boxes" text="Icon 5" row="1" col="0" />
+								<Label class="boxes" text="Icon 6" row="1" col="1" />
+								<Label class="boxes" text="Icon 7" row="1" col="2" />
+								<Label class="boxes" text="Icon 8" row="1" col="3" />
+								<Label class="boxes" text="Icon 9" row="2" col="0" />
+								<Label class="boxes" text="Icon 10" row="2" col="1" />
+								<Label class="boxes" text="Icon 11" row="2" col="2" />
+								<Label class="boxes" text="Icon 12" row="2" col="3" />
+							</GridLayout>
+							<StackLayout orientation="horizontal" class="banner" height="120">
+								<Image src="~/resources/images/bike_ads_resize.jpg" class="rounded" stretch="aspectFill" />
+							</StackLayout>
+							<StackLayout orientation="horizontal" class="banner" height="120">
+								<Image src="~/resources/images/bike_ads_resize.jpg" class="rounded padding10bot" stretch="aspectFill" />
+							</StackLayout>
+						</StackLayout>
+					</ScrollView>
+				</StackLayout>
+			</TabViewItem>
+			<TabViewItem iconSource="{{ tabIconTwo }}">
+				<Image src="~/resources/images/frog_bike.jpg" stretch="aspectFit" />
+			</TabViewItem>
+		</TabView>
+	</StackLayout>
+</Page>
